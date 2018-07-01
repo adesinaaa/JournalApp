@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Journal App</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="mail_hint">Enter Your Email</string>
+    <string name="signUp_text">Sign Up</string>
+    <string name="hint_paswd">Enter Your Password</string>
+    <string name="welcome_txt">WELCOME</string>
+    <string name="login_txt">Login</string>
+    <string name="register_txt">REGISTER</string>
+    <string name="menu_change_pic">Change Profile Picture</string>
+    <string name="menu_logout">Logout</string>
+    <string name="save_txt">SAVE</string>
+</resources>

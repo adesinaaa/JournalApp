@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:layout_margin="5dp"
+    android:background="@drawable/welcome_background">
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/round_background"
+        android:textColor="@android:color/white"
+        android:text="@string/login_txt"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_below="@id/input_layout"
+        android:layout_centerHorizontal="true"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:weightSum="1"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="@string/signUp_text"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_background"
+            android:layout_weight="0.6"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="30dp"
+            android:background="@drawable/round_background"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="30dp" />
+
+        <com.shobhitpuri.custombuttons.GoogleSignInButton
+            android:id="@+id/btn_signIn"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_weight="0.4"
+            android:layout_marginStart="20dp"
+            android:layout_centerInParent="true"
+            android:text="@string/google_sign_up"
+            app:isDarkTheme="true"
+            android:layout_marginLeft="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_centerHorizontal="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/Edit_mail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="15"
+                android:padding="5dp"
+                android:background="@drawable/round_background"
+                android:hint="@string/mail_hint"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/Edit_paswd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:ems="15"
+        android:padding="5dp"
+        android:background="@drawable/round_background"
+        android:hint="@string/hint_paswd"
+        android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+</RelativeLayout>
